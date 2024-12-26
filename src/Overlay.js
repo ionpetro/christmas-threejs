@@ -14,7 +14,7 @@ export default function Overlay({ inside, setInside, ready, setReady }) {
           START THE STORY
         </button>
         <br />
-        Created by Ion Petropoulos. Inspired by Anderson Mancini.
+        Created by <a href="https://ionpetro.com">Ion Petropoulos</a>. Inspired by <a href="https://andersonmancini.dev/">Anderson Mancini</a>.
       </footer>
     </>
   )
