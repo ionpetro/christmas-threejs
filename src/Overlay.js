@@ -14,7 +14,7 @@ export default function Overlay({ inside, setInside, ready, setReady }) {
           START THE STORY
         </button>
         <br />
-        Created by <a href="https://ionpetro.com">Ion Petropoulos</a>. Inspired by <a href="https://andersonmancini.dev/">Anderson Mancini</a>.
+        Created by <a href="https://ionpetro.com" style={{ color: 'white', textDecoration: 'underline' }}>Ion Petropoulos</a>. Inspired by <a href="https://andersonmancini.dev/" style={{ color: 'white', textDecoration: 'underline' }}>Anderson Mancini</a>.
       </footer>
     </>
   )
