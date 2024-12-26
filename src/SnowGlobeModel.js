@@ -149,7 +149,7 @@ function Texts() {
         font='/Inter_Bold.json'
         position={[-2.8, 3.3, 10]}
       >
-        ANDERSON MANCINI
+        A CHRISTMAS STORY
         <meshPhysicalMaterial
           metalness={0.2}
           roughness={0.2}
@@ -174,7 +174,7 @@ function Texts() {
           font='/DancingScript-VariableFont_wght.ttf'
           maxWidth={3.5}
           textAlign='center'
-          position={[0, 11.7, 0]}
+          position={[0, 11.6, 0]}
           fontSize='0.1'
           lineHeight={0.9}
         >
@@ -195,17 +195,6 @@ Finally, the gingerbread men climbed onto a sugar-cube sleigh and rode off into 
 Ion grinned. “But this was totally worth it.”{'\n\n'}
 
 Juan, covered in syrup, added, “Best Christmas ever!”
-        </Text>
-        
-        <Text
-          maxWidth={1.5}
-          resolution={1024}
-
-          textAlign='center'
-          position={[0, 10.5, 0]}
-          fontSize='0.08'
-        >
-          Anderson Mancini
         </Text>
       </Billboard>
     </>
