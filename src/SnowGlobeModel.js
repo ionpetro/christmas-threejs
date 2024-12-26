@@ -13,7 +13,6 @@ import { useMemo, useRef, useLayoutEffect, useState, useEffect, memo } from 'rea
 import { easing } from 'maath'
 import gsap from 'gsap'
 import SnowFlakes from './SnowFlakes'
-import FireWorks from './FireWorks'
 import LumaWorld from './LumaWorld'
 
 export default function SnowGlobeModel(props) {
@@ -22,7 +21,6 @@ export default function SnowGlobeModel(props) {
   const snowGlobeRef = useRef()
   const snowGlobeRef2 = useRef()
   const internalWorldRef = useRef()
-  const fireWorksRef = useRef()
   const [insideMesh, setInsideMesh] = useState(false)
 
   const groupRef = useRef()
@@ -72,7 +70,6 @@ export default function SnowGlobeModel(props) {
     if (!insideMesh) {
       snowGlobeRef2.current.visible = false
       snowGlobeRef.current.visible = false
-      fireWorksRef.current.visible = true
       camera.fov = 95
       camera.updateProjectionMatrix()
     } else {
@@ -80,7 +77,6 @@ export default function SnowGlobeModel(props) {
       camera.updateProjectionMatrix()
       snowGlobeRef2.current.visible = true
       snowGlobeRef.current.visible = true
-      fireWorksRef.current.visible = false
     }
   }, [insideMesh])
 
@@ -122,7 +118,6 @@ export default function SnowGlobeModel(props) {
           side={THREE.BackSide}
           envMapIntensity={3}
         />
-        <FireWorks ref={fireWorksRef} />
       </mesh>
       <mesh
         ref={snowGlobeRef2}
