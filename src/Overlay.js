@@ -1,4 +1,4 @@
-export default function Overlay({ inside, setInside }) {
+export default function Overlay({ inside, setInside, ready, setReady }) {
   return (
     <>
       <header>
@@ -9,6 +9,7 @@ export default function Overlay({ inside, setInside }) {
           className="button--explore"
           onClick={() => {
             setInside(!inside)
+            setReady(true)
           }}>
           START THE STORY
         </button>

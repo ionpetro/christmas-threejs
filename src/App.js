@@ -16,7 +16,6 @@ export default function App() {
   return (
     <>
       <Canvas
-        onClick={() => setReady(true)}
         gl={canvasConfig}
         camera={{ position: [0, 0, 5], fov: 35, far: 20000 }}
         dpr={1}
@@ -45,6 +44,8 @@ export default function App() {
       <Overlay
         inside={inside}
         setInside={setInside}
+        ready={ready}
+        setReady={setReady}
       />
       <Loader />
     </>
