@@ -96,7 +96,7 @@ export default function SnowGlobeModel(props) {
           backsideThickness={8}
           samples={4}
           thickness={0.9}
-          anisotropicBlur={0.8}
+          anisotropicBlur={1}
           ior={1.8}
           iridescence={0.5}
           iridescenceIOR={1}
@@ -158,28 +158,51 @@ function Texts() {
       </Text3D>
       <Billboard>
         <Text
+          resolution={1024}
           font='/DancingScript-VariableFont_wght.ttf'
           maxWidth={3.5}
           textAlign='center'
-          position={[0, 12.45, 0]}
+          position={[0, 12.9, 0]}
           fontSize='0.35'
           lineHeight={0.85}
         >
-          Wishing you a restful holiday season. {'\n\n'}May your Christmas be blessed with lots of love, peace, and happiness.
+          This is the Christmas story of Ion, Juan and Anna. {'\n\n'}
         </Text>
         <Text
-          maxWidth={2.5}
+          resolution={1024}
+
+          font='/DancingScript-VariableFont_wght.ttf'
+          maxWidth={3.5}
           textAlign='center'
-          position={[0, 11.2, 0]}
-          fillOpacity={0.6}
+          position={[0, 11.7, 0]}
           fontSize='0.1'
+          lineHeight={0.9}
         >
-          I will be on vacation until January 8th. Thank you for all your support in 2023. Great things are coming in 2024. Please stay tunned.
+          On Christmas Eve, three silly elves— Ion, Juan, and Anna—found a pouch of “Magical North Pole Grass” in Santa’s workshop. They lit it with a peppermint-stick pipe near the candy cane forest, and soon they were laughing at everything.{'\n\n'}
+
+Ion suddenly jumped up. “The gingerbread men in the bakery are alive! We have to see this.”{'\n\n'}
+
+Juan laughed so hard he fell over. “Alive cookies? You’re crazy, but let’s do it!”{'\n\n'}
+
+They snuck into the bakery, and Anna pointed at a tray of cookies. “Wait… are they moving?”{'\n\n'}
+
+One little gingerbread man stood up, threw a gumdrop at Juan, and shouted, “Catch me if you can!” Chaos broke loose. Frosting flew through the air, sprinkles spilled everywhere, and the elves chased the cookies around, laughing so hard they could barely breathe.{'\n\n'}
+
+Juan tried to catch one but slipped on some spilled syrup, landing in a pile of marshmallows. “I’m fine!” he shouted, cracking up as the others laughed at him.{'\n\n'}
+
+Finally, the gingerbread men climbed onto a sugar-cube sleigh and rode off into the night. Anna shook her head. “Santa’s going to kill us.”{'\n\n'}
+
+Ion grinned. “But this was totally worth it.”{'\n\n'}
+
+Juan, covered in syrup, added, “Best Christmas ever!”
         </Text>
+        
         <Text
           maxWidth={1.5}
+          resolution={1024}
+
           textAlign='center'
-          position={[0, 10.8, 0]}
+          position={[0, 10.5, 0]}
           fontSize='0.08'
         >
           Anderson Mancini

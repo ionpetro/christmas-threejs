@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import { Loader, PositionalAudio } from '@react-three/drei'
-import { useState, Suspense, useRef, useEffect } from 'react'
+import { useState, Suspense, useRef } from 'react'
 import PostProcessingEffects from './PostProcessingEffects'
 import SnowGlobeModel from './SnowGlobeModel'
 import Overlay from './Overlay'
@@ -10,7 +10,7 @@ export default function App() {
   const audioRef = useRef()
   const [inside, setInside] = useState(false)
   const isMobile = window.innerWidth < 768
-  const canvasConfig = { antialias: false, depth: false, stencil: false, alpha: false }
+  const canvasConfig = { antialias: true, depth: false, stencil: false, alpha: false }
   const [ready, setReady] = useState(false)
 
   return (
