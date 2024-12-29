@@ -1,5 +1,7 @@
 # Merry Three.js Christmas
 
+Welcome
+
 Christmas scene using threejs, react three fiber and gaussian splatting
 
 [![screenshot](https://threejs-christmas.vercel.app/preview.jpg)](https://threejs-christmas.vercel.app/)
